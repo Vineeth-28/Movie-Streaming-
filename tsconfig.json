@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "ESNext",
-    "rootDir": "./src/**/*.ts",
+    "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,  
