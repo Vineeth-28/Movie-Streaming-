@@ -1,11 +1,11 @@
 import express ,{Express , Request , Response} from 'express';
-
+import { StatusCodes } from 'http-status-codes';
 const app:Express = express();
 const port=3003;
 // Define a route for the root path ('/')
 app.get('/', (req:Request, res:Response) => {
   // Send a response to the client
-  res.send('Hello, TypeScript + Node.js + Express!');
+  res.send('Hello, TypeScript + Node.js + Express!').status(StatusCodes.OK)
 });
 
 // Start the server and listen on the specified port
